@@ -30,7 +30,7 @@
 }
 .nav-list>ul{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-right: 4rem;
 }
 .nav-list>ul>li:hover{
