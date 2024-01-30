@@ -92,3 +92,19 @@ cursor: pointer;
   filter: blur(72px);
 }
 
+
+@media screen and  (max-width: 480px){
+  .intro{
+    flex-direction: column;
+  }
+  .intro-right{
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .intro-right .blur{
+    display: none;
+  }
+  .floating-div{
+    
+  }
+}

@@ -31,7 +31,7 @@ const Intro = () => {
           <a href="https://www.linkedin.com/in/muhammad-shoaib1319/">
             <img src={LinkedIn} alt="" />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/muhammad-shoaib1319/">
             <img src={Instagram} alt="" />
           </a>
         </div>
