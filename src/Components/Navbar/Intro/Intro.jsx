@@ -28,7 +28,7 @@ const Intro = () => {
           <a href="https://www.github.com/shobi1319">
             <img src={Github} alt="GitHub" />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/muhammad-shoaib1319/">
             <img src={LinkedIn} alt="" />
           </a>
           <a href="">

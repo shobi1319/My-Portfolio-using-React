@@ -1,0 +1,49 @@
+.experience{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5rem;
+height: 30vh;
+margin-bottom: 8rem;
+
+}
+
+.achv{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.cirlce {
+    width: 4rem;
+    height: 4rem; /* Remove the extra comma here */
+    border-radius: 50%; /* Adjusted from 100% to 50% for a perfect circle */
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.cirlce::before {
+    border-radius: 50%; /* Adjusted from 100% to 50% for a perfect circle */
+    content: '';
+    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: var(--boxShadow);
+}
+
+.achv span:nth-of-type(2){
+    color: var(--orange);
+}
+span{
+    font-weight: bold;
+}
