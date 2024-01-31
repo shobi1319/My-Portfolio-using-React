@@ -1,15 +1,16 @@
 import { React } from "react";
 import "./Intro.css";
-import Github from "../..//../img/github.png";
-import LinkedIn from "../../../img/linkedin.png";
-import Instagram from "../..//../img/instagram.png";
-import  Vector1 from "../..//../img/Vector1.png";
-import  Vector2 from "../..//../img/Vector2.png";
-import  Shoaib from "../..//../img/Shoaib.png";
-import Thumbup from "../..//../img/thumbup.png"
-import Crown from "../..//../img/crown.png"
-import glassesimoji from "../..//../img/glassesimoji.png"
-import FloatingDiv from "../../FloatingDiv/FloatingDiv";
+import Github from "../../img/github.png";
+import LinkedIn from "../../img/linkedin.png";
+import Instagram from "../../img/instagram.png";
+import  Vector1 from "../../img/Vector1.png";
+import  Vector2 from "../../img/Vector2.png";
+import  Shoaib from "../../img/Shoaib.png";
+import Thumbup from "../../img/thumbup.png"
+import Crown from "../../img/crown.png"
+import glassesimoji from "../../img/glassesimoji.png"
+import FloatingDiv from "../FloatingDiv/FloatingDiv";
+
 
 const Intro = () => {
   return (
@@ -23,7 +24,7 @@ const Intro = () => {
             Quality work.
           </span>
         </div>
-        <button className="button intro-b">Hire me</button>
+       <a href="https://www.linkedin.com/in/muhammad-shoaib1319/"> <button className="button intro-b">Hire me</button></a>
         <div className="intro-icons">
           <a href="https://www.github.com/shobi1319">
             <img src={Github} alt="GitHub" />
@@ -31,7 +32,7 @@ const Intro = () => {
           <a href="https://www.linkedin.com/in/muhammad-shoaib1319/">
             <img src={LinkedIn} alt="" />
           </a>
-          <a href="https://www.linkedin.com/in/muhammad-shoaib1319/">
+          <a href="https://www.instagram.com/shoaib.1319/">
             <img src={Instagram} alt="" />
           </a>
         </div>
@@ -41,10 +42,10 @@ const Intro = () => {
       <img src={Vector2} alt="" />
       <img src={Shoaib} alt="" />
       <img src={glassesimoji} alt="" />
-      <div style={{top:'-4%' ,left:'68%'}}>
+      <div className="floating-div"  style={{top:'-4%' ,left:'68%'}}>
         <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
       </div>
-      <div style={{top:'18rem' ,left:'0rem'}}>
+      <div className="floating-div" style={{top:'18rem' ,left:'0rem'}}>
         <FloatingDiv image={Thumbup} txt1='Best' txt2='Developer Award' />
       </div>
       <div className="blur" style={{background:"rgb(238 210 255)"}}></div>

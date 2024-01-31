@@ -5,14 +5,18 @@ import Glasses from "../../img/glasses.png"
 import Humble from "../../img/humble.png"
 import Card from '../Card/Card';
 import Resume from "./Resume.pdf"
+import { useContext } from "react";
+import { themeContext } from "../../Context";
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className='services'>
+    <div className='services' id='services'>
       <div className="serv-left">
-       <span>My Valuable</span>
+       <span style={{ color: darkMode ? "white" : "" }}>My Valuable</span>
        <span>Servies</span>
-       <span>Lorem ipsum dolor sit amequuntur <br />
-        rerum ipsam porro deserunt nostrum nobis distinctio.</span>
+       <span>I provide the web solutions and well designed <br />
+        responsive  websites for your business.</span>
         <a href={Resume} download ><button className="button s-button">
             Downlaod CV
         </button></a>
@@ -31,14 +35,14 @@ const Services = () => {
         <Card 
         emoji={Glasses}
         heading={'Developer'}
-        detail={"HTML, CSS, Bootstrap, JavaScript, React"}
+        detail={"HTML, Node.js, JavaScript, React, Python"}
         />
       </div>
       <div style={{ top:'19rem' , left:'12rem'}}>
         <Card 
         emoji={Humble}
         heading={'Developer'}
-        detail={"HTML, CSS, Bootstrap, JavaScript, React"}
+        detail={"CSS, Bootstrap, Tailwind, React"}
         />
       </div>
       <div className="blur s-blur2" style={{background: "var(--purple)"}}></div>

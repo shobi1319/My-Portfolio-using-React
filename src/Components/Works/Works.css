@@ -25,6 +25,7 @@
 .main-circle > :nth-child(1) {
   top: -3rem;
   left: 5rem;
+  align-items: center;
 }
 .main-circle > :nth-child(2) {
   top: 15rem;
@@ -69,4 +70,26 @@
   background: #f5c32c;
   left: 18rem;
   top: 8rem;
+}
+@media screen and (max-width: 480px) {
+  .works {
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 5rem;
+  }
+
+  .w-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content:start;
+    transform: scale(0.7);
+  }
+  .mainCircle{
+    position: static;
+  }
+  backCircle{
+    left: 8rem!important;
+  }
+
 }

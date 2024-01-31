@@ -32,3 +32,12 @@ padding: 10px;
 font-size: 16px;
 color: #5290fd;
 }
+.card-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media screen and (max-width: 480px){
+    .card{
+      width: auto;
+    }
+  }
